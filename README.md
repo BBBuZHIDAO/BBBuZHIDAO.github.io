@@ -1,2 +1,2 @@
-# 0Bu0.github.io
+# Bu.github.io
 卜知道的网站
