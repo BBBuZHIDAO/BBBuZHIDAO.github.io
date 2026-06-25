@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hekai Bu — Academic researcher in nanoscale heat transfer and scientific software developer in GPU-accelerated molecular dynamics.">
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Hekai Bu — Academic researcher in nanoscale heat transfer, interfacial thermal transport, and atomistic simulations; scientific software developer in GPU-accelerated molecular dynamics and machine-learning interatomic potentials. Master's student in Solid Mechanics at Wuhan University.">
+  <meta name="author" content="Hekai Bu">
+  <meta property="og:title" content="Hekai Bu — Research &amp; Development">
+  <meta property="og:description" content="Academic researcher in nanoscale heat transfer and scientific software developer in GPU-accelerated molecular dynamics.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
   <title>Hekai Bu — Research &amp; Development</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -22,6 +30,7 @@
       <nav class="site-nav" id="siteNav">
         <a href="#home">Home</a>
         <a href="#research">Research</a>
+        <a href="#work">Work</a>
         <a href="#development">Development</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
@@ -38,34 +47,76 @@
   <div class="nav-overlay" id="navOverlay"></div>
 
   <!-- =================================================================
-       Home / Hero
+       Home / Hero — Two-column
        ================================================================= -->
   <section class="section hero" id="home">
-    <div class="container-narrow">
-      <h1 class="hero-name">Hekai Bu</h1>
-      <p class="hero-role">
-        Master&rsquo;s Student in Solid Mechanics, Wuhan University<br>
-        Wuhan, China
-      </p>
-      <div class="hero-bio">
-        <p>
-          I am a master&rsquo;s student in Solid Mechanics at Wuhan University.
-          My research focuses on <strong>nanoscale heat transfer</strong>,
-          <strong>interfacial thermal transport</strong>, and
-          <strong>atomistic simulations</strong> of two-dimensional and van der
-          Waals materials. I also develop and optimize scientific simulation
-          software, with particular interests in
-          <strong>GPU-accelerated molecular dynamics</strong>,
-          <strong>machine-learning interatomic potentials</strong>, and
-          <strong>hybrid force-field frameworks</strong> for large-scale
-          materials simulations.
-        </p>
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left column -->
+        <div class="hero-left">
+          <h1 class="hero-name">Hekai Bu</h1>
+          <p class="hero-role">
+            Master&rsquo;s Student in Solid Mechanics<br>
+            Wuhan University &middot; Wuhan, China
+          </p>
+          <div class="hero-bio">
+            <p>
+              I am a master&rsquo;s student in Solid Mechanics at Wuhan University.
+              My research focuses on <strong>nanoscale heat transfer</strong>,
+              <strong>interfacial thermal transport</strong>, and
+              <strong>atomistic simulations</strong> of two-dimensional and van der
+              Waals materials. I also develop and optimize scientific simulation
+              software, with particular interests in
+              <strong>GPU-accelerated molecular dynamics</strong>,
+              <strong>machine-learning interatomic potentials</strong>, and
+              <strong>hybrid force-field frameworks</strong> for large-scale
+              materials simulations.
+            </p>
+          </div>
+          <div class="hero-links">
+            <a class="hero-link" href="mailto:hekai_bu@whu.edu.cn">Email</a>
+            <a class="hero-link" href="#contact">Contact</a>
+            <a class="hero-link" href="#cv">CV</a>
+          </div>
+        </div>
+
+        <!-- Right column — Profile panel -->
+        <div class="hero-right">
+          <div class="profile-panel">
+            <div>
+              <h4>Research</h4>
+              <div class="profile-tags">
+                <span class="profile-tag">Nanoscale heat transfer</span>
+                <span class="profile-tag">Interfacial thermal transport</span>
+                <span class="profile-tag">van der Waals materials</span>
+                <span class="profile-tag">2D materials</span>
+                <span class="profile-tag">Phonon transport</span>
+                <span class="profile-tag">MD simulations</span>
+                <span class="profile-tag">ML interatomic potentials</span>
+              </div>
+            </div>
+            <div>
+              <h4>Development</h4>
+              <div class="profile-tags">
+                <span class="profile-tag">GPU acceleration</span>
+                <span class="profile-tag">GPUMD</span>
+                <span class="profile-tag">NEP</span>
+                <span class="profile-tag">LAMMPS</span>
+                <span class="profile-tag">CUDA C++</span>
+                <span class="profile-tag">Hybrid potentials</span>
+                <span class="profile-tag">HPC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- =================================================================
-       Research
+       Research — Three compact themes
        ================================================================= -->
   <section class="section" id="research">
     <div class="container">
@@ -73,37 +124,33 @@
 
       <div class="research-grid">
 
-        <!-- Theme 1: Interfacial thermal transport -->
         <div class="research-card">
           <h3>Interfacial Thermal Transport in van&nbsp;der&nbsp;Waals Materials</h3>
           <p>
-            I investigate phonon transport mechanisms across interfaces in
+            I investigate phonon transport across interfaces in
             two-dimensional heterostructures, using molecular dynamics
-            simulations and hybrid potentials to understand interfacial
-            thermal conductance in graphene, h-BN, and transition metal
-            dichalcogenide systems.
+            and hybrid potentials to understand thermal conductance in
+            graphene, h-BN, and transition metal dichalcogenide systems.
           </p>
         </div>
 
-        <!-- Theme 2: Phonon transport and atomistic simulations -->
         <div class="research-card">
           <h3>Phonon Transport &amp; Atomistic Simulations</h3>
           <p>
             I study thermal transport at the nanoscale through large-scale
             molecular dynamics, characterizing phonon dispersion, lifetime,
             and scattering mechanisms in low-dimensional materials with
-            GPU-accelerated simulation frameworks.
+            GPU-accelerated frameworks.
           </p>
         </div>
 
-        <!-- Theme 3: ML and hybrid potentials -->
         <div class="research-card">
           <h3>Machine-Learning &amp; Hybrid Interatomic Potentials</h3>
           <p>
             I develop modular frameworks that combine machine-learning
             potentials with classical force fields to achieve near-DFT
             accuracy at empirical-potential cost, and integrate these
-            hybrid schemes into production molecular dynamics codes.
+            schemes into production molecular dynamics codes.
           </p>
         </div>
 
@@ -112,142 +159,218 @@
   </section>
 
   <!-- =================================================================
-       Development
+       Selected Work — Three compact cards
        ================================================================= -->
-  <section class="section" id="development">
+  <section class="section" id="work">
     <div class="container">
+      <h2 class="section-title">Selected Work</h2>
 
-      <h2 class="section-title">Development</h2>
+      <div class="work-grid">
 
-      <!-- GPUMD & NEP — main development project -->
-      <div class="dev-project">
-        <div class="dev-project-header">
-          <h3>GPUMD &amp; NEP: Performance Optimization &amp; Feature Expansion</h3>
-          <span class="meta">Jul. 2023 – Present &middot; Key Developer</span>
+        <!-- Card 1: Hybrid potentials -->
+        <div class="work-card">
+          <h3>Hybrid Machine-Learning &amp; Physics-Based Potentials</h3>
+          <p>
+            Developed a hybrid sMLP+ILP framework that combines near-DFT
+            accuracy with empirical-potential efficiency, reducing training
+            configurations by more than one order of magnitude. Validated
+            against experimental benchmarks for graphene, h-BN, and MoS<sub>2</sub>.
+          </p>
+          <span class="work-label">JMPS 2026 &middot; JCTC 2026</span>
         </div>
-        <div class="dev-project-details">
-          <ul>
-            <li>Profiled GPU kernels using NVIDIA Nsight Compute and refactored performance bottlenecks, achieving approximately 15% speedup through algorithmic optimization.</li>
-            <li>Developed loading-spring force modules in GPUMD for GPU-accelerated dynamic friction simulations.</li>
-            <li>Integrated hybrid potentials for van der Waals materials, including SW+ILP, Tersoff+ILP, and NEP+ILP.</li>
-            <li>Maintained the NEP_CPU repository and improved the NEP–LAMMPS interface to support hybrid potentials in LAMMPS.</li>
-            <li>Developed a ghost-atom computation module for the GPUMD Deep Potential interface to improve throughput and reduce GPU memory consumption.</li>
-            <li>Updated the official GPUMD user manual and maintained internal developer documentation.</li>
-          </ul>
+
+        <!-- Card 2: GPUMD & NEP -->
+        <div class="work-card">
+          <h3>GPUMD/NEP Development &amp; GPU Acceleration</h3>
+          <p>
+            Profiled and optimized GPU kernels achieving ~15% speedup via
+            algorithmic refactoring. Integrated hybrid potentials (SW+ILP,
+            Tersoff+ILP, NEP+ILP) and developed loading-spring friction
+            modules for GPU-accelerated dynamic simulations.
+          </p>
+          <span class="work-label">MGE Advances 2025</span>
         </div>
+
+        <!-- Card 3: Interfacial thermal transport -->
+        <div class="work-card">
+          <h3>Interfacial Thermal Transport in 2D Heterostructures</h3>
+          <p>
+            Characterized moir&eacute;-driven thermal transport in twisted
+            transition metal dichalcogenides and chirality-dependent strain
+            effects on thermal conductivity in MoS<sub>2</sub> nanotubes using
+            large-scale MD simulations.
+          </p>
+          <span class="work-label">ACS Nano 2025 &middot; ICHMT 2026</span>
+        </div>
+
       </div>
-
     </div>
   </section>
 
   <!-- =================================================================
-       Publications
+       Development — Theme-based contributions
+       ================================================================= -->
+  <section class="section" id="development">
+    <div class="container">
+      <h2 class="section-title">Development</h2>
+
+      <p class="dev-intro">
+        Key contributor to <strong>GPUMD</strong> and <strong>NEP</strong>
+        (Jul. 2023 – Present), focusing on GPU kernel optimization, hybrid
+        potential integration, and simulation feature development.
+      </p>
+
+      <div class="dev-grid">
+
+        <div class="dev-theme">
+          <h4>GPU Kernel Optimization</h4>
+          <p>
+            Profiled performance bottlenecks with NVIDIA Nsight Compute and
+            refactored critical GPU kernels, achieving approximately 15%
+            speedup through algorithmic optimization.
+          </p>
+        </div>
+
+        <div class="dev-theme">
+          <h4>Hybrid Potential Implementation</h4>
+          <p>
+            Integrated SW+ILP, Tersoff+ILP, and NEP+ILP hybrid potentials in
+            GPUMD and LAMMPS. Maintained the NEP_CPU repository and extended
+            the NEP&ndash;LAMMPS interface for hybrid potential support.
+          </p>
+        </div>
+
+        <div class="dev-theme">
+          <h4>Friction Simulation Modules</h4>
+          <p>
+            Developed loading-spring force modules for GPU-accelerated dynamic
+            friction simulations, expanding GPUMD&rsquo;s capabilities for
+            tribological modeling.
+          </p>
+        </div>
+
+        <div class="dev-theme">
+          <h4>Deep Potential Interface &amp; Documentation</h4>
+          <p>
+            Designed a ghost-atom computation module that reduces GPU memory
+            footprint and improves throughput for the Deep Potential interface.
+            Updated the official GPUMD user manual and internal developer
+            documentation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       Publications — Compact with labels
        ================================================================= -->
   <section class="section" id="publications">
     <div class="container-narrow">
-
       <h2 class="section-title">Publications</h2>
 
       <ol class="pub-list">
 
         <li class="pub-item">
-          <span class="authors">
-            <span class="self">H. Bu</span><sup>#</sup>,
-            W. Jiang<sup>#</sup>,
-            P. Ying, T. Liang, Z. Fan, W. Ouyang,
+          <span class="pub-number">1.</span>
+          <span class="pub-body">
+            <span class="authors">
+              <span class="self">H. Bu</span><sup>#</sup>,
+              W. Jiang<sup>#</sup>,
+              P. Ying, T. Liang, Z. Fan, W. Ouyang,
+            </span>
+            <span class="title">Modular hybrid machine learning and physics-based potentials for scalable modeling of van der Waals heterostructures,</span>
+            <span class="journal">J. Mech. Phys. Solids</span>,
+            2026, 210, 106540.
+            <span class="pub-label co-first">Co-first author</span>
           </span>
-          <span class="title">
-            Modular hybrid machine learning and physics-based potentials for
-            scalable modeling of van der Waals heterostructures,
-          </span>
-          <span class="journal">Journal of the Mechanics and Physics of Solids</span>,
-          2026, 210, 106540.
-          <span class="note">Co-first author</span>
         </li>
 
         <li class="pub-item">
-          <span class="authors">
-            W. Jiang<sup>#</sup>,
-            <span class="self">H. Bu</span><sup>#</sup>,
-            T. Liang<sup>#</sup>,
-            P. Ying, Z. Fan, J. Xu, W. Ouyang,
+          <span class="pub-number">2.</span>
+          <span class="pub-body">
+            <span class="authors">
+              W. Jiang<sup>#</sup>,
+              <span class="self">H. Bu</span><sup>#</sup>,
+              T. Liang<sup>#</sup>,
+              P. Ying, Z. Fan, J. Xu, W. Ouyang,
+            </span>
+            <span class="title">Accurate modeling of interfacial thermal transport in van der Waals heterostructures via hybrid machine learning and registry-dependent potentials,</span>
+            <span class="journal">J. Chem. Theory Comput.</span>,
+            2026, 22(9), 4699&ndash;4715.
+            <span class="pub-label co-first">Co-first author</span>
           </span>
-          <span class="title">
-            Accurate modeling of interfacial thermal transport in van der Waals
-            heterostructures via hybrid machine learning and registry-dependent
-            potentials,
-          </span>
-          <span class="journal">Journal of Chemical Theory and Computation</span>,
-          2026, 22(9), 4699&ndash;4715.
-          <span class="note">Co-first author</span>
         </li>
 
         <li class="pub-item">
-          <span class="authors">
-            K. Xu,
-            <span class="self">H. Bu</span>,
-            S. Pan, E. Lindgren, Y. Wu, Y. Wang, J. Liu, K. Song, B. Xu,
-            Y. Li, T. Hainer, L. Svensson, J. Wiktor, R. Zhao, H. Huang,
-            et al., P. Guan, P. Erhart, J. Sun, W. Ouyang, Y. Su, Z. Fan,
+          <span class="pub-number">3.</span>
+          <span class="pub-body">
+            <span class="authors">
+              K. Xu,
+              <span class="self">H. Bu</span>,
+              S. Pan, E. Lindgren, Y. Wu, Y. Wang, J. Liu, K. Song, B. Xu,
+              Y. Li, T. Hainer, L. Svensson, J. Wiktor, R. Zhao, H. Huang,
+              et al., P. Guan, P. Erhart, J. Sun, W. Ouyang, Y. Su, Z. Fan,
+            </span>
+            <span class="title">GPUMD 4.0: a high-performance molecular dynamics package for versatile materials simulations with machine-learned potentials,</span>
+            <span class="journal">MGE Advances</span>,
+            2025, 3(3), e70028.
+            <span class="pub-label software">Software</span>
           </span>
-          <span class="title">
-            GPUMD 4.0: a high-performance molecular dynamics package for
-            versatile materials simulations with machine-learned potentials,
-          </span>
-          <span class="journal">MGE Advances</span>,
-          2025, 3(3), e70028.
         </li>
 
         <li class="pub-item">
-          <span class="authors">
-            W. Jiang,
-            <span class="self">H. Bu</span>,
-            B. Wu, W. Ouyang,
+          <span class="pub-number">4.</span>
+          <span class="pub-body">
+            <span class="authors">
+              W. Jiang,
+              <span class="self">H. Bu</span>,
+              B. Wu, W. Ouyang,
+            </span>
+            <span class="title">Chirality-dependent strain modulation of thermal conductivity in double-walled molybdenum disulfide nanotubes,</span>
+            <span class="journal">Int. Commun. Heat Mass Transfer</span>,
+            2026, 170, 109935.
+            <span class="pub-label topic">Thermal transport</span>
           </span>
-          <span class="title">
-            Chirality-dependent strain modulation of thermal conductivity in
-            double-walled molybdenum disulfide nanotubes,
-          </span>
-          <span class="journal">International Communications in Heat and Mass Transfer</span>,
-          2026, 170, 109935.
         </li>
 
         <li class="pub-item">
-          <span class="authors">
-            W. Jiang, T. Liang,
-            <span class="self">H. Bu</span>,
-            J. Xu, W. Ouyang,
+          <span class="pub-number">5.</span>
+          <span class="pub-body">
+            <span class="authors">
+              W. Jiang, T. Liang,
+              <span class="self">H. Bu</span>,
+              J. Xu, W. Ouyang,
+            </span>
+            <span class="title">Moir&eacute;-driven interfacial thermal transport in twisted transition metal dichalcogenides,</span>
+            <span class="journal">ACS Nano</span>,
+            2025, 19(17), 16287&ndash;16296.
+            <span class="pub-label topic">Thermal transport</span>
           </span>
-          <span class="title">
-            Moir&eacute;-driven interfacial thermal transport in twisted
-            transition metal dichalcogenides,
-          </span>
-          <span class="journal">ACS Nano</span>,
-          2025, 19(17), 16287&ndash;16296.
         </li>
 
         <li class="pub-item">
-          <span class="authors">
-            T. Liang<sup>#</sup>,
-            W. Jiang<sup>#</sup>,
-            K. Xu,
-            <span class="self">H. Bu</span>,
-            Z. Fan, W. Ouyang, J. Xu,
+          <span class="pub-number">6.</span>
+          <span class="pub-body">
+            <span class="authors">
+              T. Liang<sup>#</sup>,
+              W. Jiang<sup>#</sup>,
+              K. Xu,
+              <span class="self">H. Bu</span>,
+              Z. Fan, W. Ouyang, J. Xu,
+            </span>
+            <span class="title">PYSED: A tool for extracting kinetic-energy-weighted phonon dispersion and lifetime from molecular dynamics simulations,</span>
+            <span class="journal">J. Appl. Phys.</span>,
+            2025, 138(7), 075101.
+            <span class="pub-label software">Software</span>
           </span>
-          <span class="title">
-            PYSED: A tool for extracting kinetic-energy-weighted phonon
-            dispersion and lifetime from molecular dynamics simulations,
-          </span>
-          <span class="journal">Journal of Applied Physics</span>,
-          2025, 138(7), 075101.
         </li>
 
       </ol>
 
       <!-- Patents & Software Copyrights -->
-      <h3 class="subsection-heading-rule">
-        Patents &amp; Software Copyrights
-      </h3>
+      <h3 class="subsection-heading-rule">Patents &amp; Software Copyrights</h3>
 
       <ul class="patent-list">
         <li class="patent-item">
@@ -277,98 +400,90 @@
   </section>
 
   <!-- =================================================================
-       Experience
+       Experience — Clean, not resume-like
        ================================================================= -->
   <section class="section" id="experience">
     <div class="container-narrow">
-
       <h2 class="section-title">Experience</h2>
 
       <!-- Education -->
-      <h3 class="subsection-heading">Education</h3>
-
-      <table class="edu-table">
-        <tbody>
-          <tr>
-            <td class="edu-degree">M.S. in Solid Mechanics</td>
-            <td>Wuhan University</td>
-            <td class="edu-meta">Sep. 2023 – Jun. 2026</td>
-          </tr>
-          <tr>
-            <td class="edu-degree">B.Eng. in Engineering Mechanics</td>
-            <td>Wuhan University</td>
-            <td class="edu-meta">Sep. 2019 – Jun. 2023</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="edu-honors">
-        <h4>Selected Honors</h4>
-        <ul>
-          <li>Wuhan University Second-Class Scholarship, 2021</li>
-          <li>Wuhan University Outstanding Student Award, 2021</li>
-          <li>Provincial Second Prize, National College Students&rsquo; Mathematics Competition, 2020</li>
+      <div class="exp-block">
+        <h3>Education</h3>
+        <ul class="edu-list">
+          <li>
+            <span class="edu-degree">M.S. in Solid Mechanics</span>
+            <span class="edu-school">Wuhan University</span>
+            <span class="edu-date">Sep. 2023 – Jun. 2026</span>
+          </li>
+          <li>
+            <span class="edu-degree">B.Eng. in Engineering Mechanics</span>
+            <span class="edu-school">Wuhan University</span>
+            <span class="edu-date">Sep. 2019 – Jun. 2023</span>
+          </li>
         </ul>
-      </div>
-
-      <hr>
-
-      <!-- Work experience -->
-      <h3 class="subsection-heading">Work</h3>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <h3>C++ Software Engineer Intern</h3>
-          <span class="exp-meta">Mar. 2023 – Jun. 2023</span>
-        </div>
-        <div class="exp-sub">YUSUR Technology Co., Ltd., Wuhan</div>
-        <div class="exp-details">
-          <ul>
-            <li>Implemented host-to-card QDMA transfer modules in QEMU, including descriptor packaging, DMA execution, status-queue management, and packet validation.</li>
-            <li>Built Docker-based development environments and debugged the open-nic driver on a hardware simulator.</li>
-            <li>Collaborated on coding standards and version-control workflows using GitLab.</li>
-            <li>Prepared application documentation and contributed to software copyright and patent materials.</li>
+        <div class="honors-block">
+          <h4 class="honors-heading">Selected Honors</h4>
+          <ul class="exp-list">
+            <li>Wuhan University Second-Class Scholarship, 2021</li>
+            <li>Wuhan University Outstanding Student Award, 2021</li>
+            <li>Provincial Second Prize, National College Students&rsquo; Mathematics Competition, 2020</li>
           </ul>
         </div>
       </div>
 
       <hr>
 
+      <!-- Work -->
+      <div class="exp-block">
+        <h3>Work</h3>
+        <div class="exp-meta-row">
+          <span class="exp-institution">YUSUR Technology Co., Ltd.</span>
+          <span class="exp-date">Mar. 2023 – Jun. 2023</span>
+        </div>
+        <p class="exp-role">C++ Software Engineer Intern, Wuhan</p>
+        <ul class="exp-list">
+          <li>Implemented host-to-card QDMA transfer modules in QEMU, including descriptor packaging, DMA execution, status-queue management, and packet validation.</li>
+          <li>Built Docker-based development environments and debugged the open-nic driver on a hardware simulator.</li>
+          <li>Collaborated on coding standards and version-control workflows using GitLab.</li>
+          <li>Prepared application documentation and contributed to software copyright and patent materials.</li>
+        </ul>
+      </div>
+
+      <hr>
+
       <!-- Skills -->
-      <h3 class="subsection-heading">Technical Skills</h3>
-
-      <div class="skills-group">
-        <h4>Languages</h4>
-        <div class="skills-tags">
-          <span class="skill-tag">C/C++</span>
-          <span class="skill-tag">CUDA C++</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">MATLAB</span>
-          <span class="skill-tag">Fortran</span>
+      <div class="skills-block">
+        <div class="skills-row">
+          <span class="skills-label">Languages</span>
+          <div class="skills-tags">
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">CUDA C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Fortran</span>
+          </div>
         </div>
-      </div>
-
-      <div class="skills-group">
-        <h4>Tools</h4>
-        <div class="skills-tags">
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GDB</span>
-          <span class="skill-tag">CUDA-GDB</span>
-          <span class="skill-tag">Make</span>
-          <span class="skill-tag">NVIDIA Nsight Compute</span>
-          <span class="skill-tag">Vim</span>
-          <span class="skill-tag">SLURM</span>
+        <div class="skills-row">
+          <span class="skills-label">Tools</span>
+          <div class="skills-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GDB</span>
+            <span class="skill-tag">CUDA-GDB</span>
+            <span class="skill-tag">Make</span>
+            <span class="skill-tag">NVIDIA Nsight Compute</span>
+            <span class="skill-tag">Vim</span>
+            <span class="skill-tag">SLURM</span>
+          </div>
         </div>
-      </div>
-
-      <div class="skills-group">
-        <h4>Scientific Software</h4>
-        <div class="skills-tags">
-          <span class="skill-tag">GPUMD</span>
-          <span class="skill-tag">LAMMPS</span>
-          <span class="skill-tag">VASP</span>
-          <span class="skill-tag">OVITO</span>
-          <span class="skill-tag">Adobe Illustrator</span>
+        <div class="skills-row">
+          <span class="skills-label">Sci. Software</span>
+          <div class="skills-tags">
+            <span class="skill-tag">GPUMD</span>
+            <span class="skill-tag">LAMMPS</span>
+            <span class="skill-tag">VASP</span>
+            <span class="skill-tag">OVITO</span>
+            <span class="skill-tag">Adobe Illustrator</span>
+          </div>
         </div>
       </div>
 
@@ -383,8 +498,8 @@
       <h2 class="section-title">CV</h2>
       <p class="cv-note">
         A full curriculum vitae is being prepared and will be available for
-        download shortly. In the meantime, the sections above summarize my
-        education, research, development work, and publications.
+        download shortly. The sections above summarize my education, research,
+        development work, and publications.
       </p>
       <!-- TODO: replace href with actual CV file when ready -->
       <!-- <a class="cv-download" href="cv/cv.pdf">Download CV (PDF)</a> -->
@@ -392,25 +507,28 @@
   </section>
 
   <!-- =================================================================
-       Contact
+       Contact — Grid layout
        ================================================================= -->
   <section class="section" id="contact">
     <div class="container-narrow">
       <h2 class="section-title">Contact</h2>
-      <div class="contact-info">
-        <p>
-          <strong>Email:</strong>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <strong>Email</strong>
           <a href="mailto:hekai_bu@whu.edu.cn">hekai_bu@whu.edu.cn</a>
-        </p>
-        <p>
-          <strong>Location:</strong> Wuhan, China
-        </p>
-        <p>
-          <strong>GitHub:</strong> <em class="text-muted">(coming soon)</em>
-        </p>
-        <p>
-          <strong>Google Scholar:</strong> <em class="text-muted">(coming soon)</em>
-        </p>
+        </div>
+        <div class="contact-item">
+          <strong>Location</strong>
+          Wuhan, China
+        </div>
+        <div class="contact-item">
+          <strong>GitHub</strong>
+          <em class="text-muted">(coming soon)</em>
+        </div>
+        <div class="contact-item">
+          <strong>Google Scholar</strong>
+          <em class="text-muted">(coming soon)</em>
+        </div>
       </div>
     </div>
   </section>
